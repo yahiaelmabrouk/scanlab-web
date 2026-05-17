@@ -1,0 +1,142 @@
+// Function that gives header fonts the appropriate font-size
+$base-font-size: 12px;
+$heading-scale: 6; // amount of px headings grow from h6 to h1
+$shaped-card-border: 16px;
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: $base-font-size + $heading-scale * ($heading-scale - $i);
+    }
+}
+
+.shaped-card {
+    border-radius: 0 $shaped-card-border;
+    background-color: $white;
+    box-shadow: 0px 0px 10px rgba(11, 49, 51, 0.25);
+}
+// classes for page title cards and home cards
+
+// pass or fail prop colors
+
+.pass {
+    color: $ocean;
+    font-weight: 700;
+}
+
+.fail {
+    color: $red;
+    font-weight: 700;
+}
+
+/* left border color */
+$card-border-left: 3px;
+$card-border-bottom: 2px;
+
+.blue-border {
+    border-left: $blue solid $card-border-left;
+    border-bottom: $blue solid $card-border-bottom;
+}
+.green-border {
+    border-left: $green solid $card-border-left;
+    border-bottom: $green solid $card-border-bottom;
+}
+.pink-border {
+    border-left: $pink solid $card-border-left;
+    border-bottom: $pink solid $card-border-bottom;
+}
+.gray-border {
+    border-left: $gray-five solid $card-border-left;
+    border-bottom: $gray-five solid $card-border-bottom;
+}
+.yellow-border {
+    border-left: $sunflower solid $card-border-left;
+    border-bottom: $sunflower solid $card-border-bottom;
+}
+.dark-blue-border {
+    border-left: $blue solid $card-border-left;
+    border-bottom: $blue solid $card-border-bottom;
+}
+.pass-border {
+    border-left: $ocean solid $card-border-left;
+    border-bottom: $ocean solid $card-border-bottom;
+}
+.danger-border {
+    border-left: $sunflower solid $card-border-left;
+    border-bottom: $sunflower solid $card-border-bottom;
+}
+.fail-border {
+    border-left: $red solid $card-border-left;
+    border-bottom: $red solid $card-border-bottom;
+}
+
+/* bottom border colors */
+.gradient-blue {
+    background-image: $gradient-blue;
+}
+.gradient-green {
+    background-image: $gradient-green;
+}
+.gradient-pink {
+    background-image: $gradient-pink;
+}
+.gradient-gray {
+    background-image: $gradient-gray;
+}
+.gradient-yellow {
+    background-image: $gradient-yellow;
+}
+.gradient-blue-pink {
+    background-image: $gradient-sunset;
+}
+.gradient-pass {
+    background-image: $gradient-pass;
+}
+.gradient-fail {
+    background-image: $gradient-fail;
+}
+
+// icon background colors 
+.blue-background {
+    background-color: $blue;
+}
+.green-background {
+    background-color: $green;
+}
+.pink-background {
+    background-color: $pink;
+}
+.gray-background {
+    background-color: $gray-five;
+}
+.yellow-background {
+    background-color: $sunflower;
+}
+.dark-blue-background {
+    background-color: $dark-blue;
+}
+
+.short-key {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.cardiac-form-field {
+    height: fit-content;
+    padding: 0 10px;
+
+    .slice-form {
+        padding: 0 !important;
+        .v-text-field__details {
+            display: none;
+        }
+
+        label {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }   
+    }
+}

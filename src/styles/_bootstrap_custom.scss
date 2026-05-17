@@ -1,0 +1,14 @@
+// Custom Variables first
+// See: https://bootstrap-vue.js.org/docs/reference/theming/
+//$body-bg: #f00;
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+// Bootstrap imports, after custom variables
+// These have to go into their own file like this according to the docs
+// https://bootstrap-vue.js.org/docs/#using-module-bundlers
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index';
+@import 'node_modules/pretty-checkbox/src/pretty-checkbox.scss';

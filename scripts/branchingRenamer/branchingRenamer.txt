@@ -1,0 +1,23 @@
+Uploading a Branching Dicom File Group
+
+The following is for a single group of Dicom files
+
+1) Extract contents of BranchingRenamer.zip somewhere on your Windows computer
+2) Copy all relevant Dicom files into its subfolders ( specifically: )
+    a) Put all Initial Localizers (the files that load immediately to show the initial localizers) into the /InitialLocalizers folder
+    b) Within the /HD folder, create a folder per Branch
+        i) The name of this folder will be the internal name of the branch (which is currently what you see in the admin interface)
+        ii) It must only be letters (no spaces). For example: BreathIn
+        iii) Repeat for as many Branches as your Dicom data has
+        iv) Place a copy of your HD Dicom files (for Reformat) into these subfolders
+    c) Repeat these steps for the /LD folder (create the same sub-folders that you added into the HD folder)
+        i) Place a copy of your LD Dicom files (for Creating Localizers) into these subfolders
+3) Run rename_files.bat
+    a) This renames all files in the folders under /HD in a way that Scanlab will understand them to be part of different branches (a different branch per subfolder)
+4) Upload all individual files to Scanlab ( specifically: )
+    a) Go to https://app.scanlabmr.com/dicom
+    b) Create a new Dicom Group, with a name and region, but without a Type
+    c) Refresh the page
+    d) Upload all Dicom files from the HD and InitialLocalizers folders
+        i) Click “Wait” a few times if Chrome suggests closing the tab - it’s just going to take a bit (alternatively, you can try uploading less files at once)
+5) Try creating a new test from your new Dicom and look for the Branch dropdown to make sure it worked

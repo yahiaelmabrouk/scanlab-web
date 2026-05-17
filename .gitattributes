@@ -1,0 +1,2 @@
+*.json merge=json-merge
+* text=auto eol=lf

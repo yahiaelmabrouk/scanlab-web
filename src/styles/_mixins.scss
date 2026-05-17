@@ -1,0 +1,33 @@
+@mixin hover-colors($colors-list) {
+  @each $name, $color in $colors-list {
+    .nav-item-#{$name} .nav-link:hover {
+      color: $color !important; //had to overwrite vue-bootstrap :(
+    }
+  }
+}
+
+@mixin active-colors($colors-list) {
+  @each $name, $color in $colors-list {
+    .nav-item-#{$name}.active .nav-link {
+      color: $color !important; //had to overwrite vue-bootstrap :(
+    }
+    .nav-item-#{$name}.active {
+      border-bottom: 4px solid $color;
+    }
+  }
+}
+
+@mixin gradient-border($border, $gradient) {
+  &::before {
+    background: $gradient;
+    border-radius: inherit;
+    bottom: 0;
+    content: '';
+    left: 0;
+    margin: -$border;
+    position: absolute;
+    right: $border;
+    top: $border;
+    z-index: -1;
+  }
+}

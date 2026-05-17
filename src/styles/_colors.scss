@@ -1,0 +1,71 @@
+// Blue
+$blue: #247ba0;
+$light-blue: #2cc8eb;
+$dark-blue: #074874;
+$ocean: #03b5aa;
+$button-blue: #1692ae;
+
+// Green
+$green: #3a9989;
+$light-green: #b2dbbf;
+$med-green: #3b7e50;
+
+// Yellow
+$sunflower: #ffcd3c;
+$tangerine: #f9ac34;
+$orange: #ff9234;
+$peach: #f78764;
+$yellow: #ffe59b;
+$light-yellow: #f3ffbd;
+
+// Red
+$red: #d31246;
+$wine: #a53150;
+$blood: #810022;
+$pink: #ff1654;
+$purple: #be1898;
+
+// White & Black
+$white: #fffef9;
+$gray: #f5f5f5;
+$gray-two: #a9a9a9;
+$gray-three: #7b8287;
+$gray-four: #ced4da;
+$gray-five: #4a5962;
+$black: #071920;
+
+// Gradients
+$gradient-blue: linear-gradient(90.2deg, $blue 0.03%, $ocean 53.81%, $light-yellow 99.96%);
+$gradient-green: linear-gradient(90.2deg, $green 0.03%, $ocean 53.81%, $light-yellow 99.96%);
+$gradient-pink: linear-gradient(90.2deg, $purple 0.03%, $pink 53.81%, $tangerine 99.96%);
+$gradient-yellow: linear-gradient(90.2deg, $tangerine 0.03%, $red 99.96%);
+$gradient-sunset: linear-gradient(90.2deg, $blue 0.03%, $pink 99.96%);
+
+$half-blue: linear-gradient(to right, $blue, $ocean, $light-yellow);
+$half-green: linear-gradient(to right, $green, $light-green, $light-yellow);
+$half-pink: linear-gradient(to right, $purple, $pink, $tangerine);
+$half-yellow: linear-gradient(to right, $tangerine, $red);
+$half-sunset: linear-gradient(to right, $blue, $pink);
+
+$gradient-gray: linear-gradient(90.2deg, $gray-five 0.03%, $gray-three 53.81%, $gray 99.96%);
+$gradient-pass: linear-gradient(90.2deg, $ocean 0.03%, $light-green 99.96%);
+$gradient-fail: linear-gradient(90.2deg, $red 0.03%, $pink 99.96%);
+
+//Color Mapping
+$primary: $blue;
+$secondary: $green;
+$lines-gray: $gray-two;
+$border-gray: $gray-four;
+$bg-gray: #e5e5e5;
+$bg-gray2: #f1f5f5; // added due to discrepancy between figma and dropper
+$text: $black;
+$danger: $red;
+
+// Base Colors
+// $blue, $green, $ocean, $sunflower, $pink
+
+$colors-list: (
+  'pink': #ff1654,
+  'green': #3a9989,
+  'blue': #247ba0
+);

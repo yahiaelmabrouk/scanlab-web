@@ -1,0 +1,28 @@
+<svg width="445" height="445" viewBox="0 0 445 445" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="445" height="445">
+<circle cx="222.174" cy="222.174" r="222.174" fill="#F9AC34"/>
+</mask>
+<g mask="url(#mask0)">
+<circle cx="222.174" cy="222.174" r="222.174" fill="#FF1654"/>
+<path d="M471 18.5L-30.5 399.5V479.5H471V18.5Z" fill="url(#paint0_linear)"/>
+</g>
+<rect x="118.618" y="68" width="238" height="286" rx="14" transform="rotate(4.53598 118.618 68)" fill="#BECAD2"/>
+<rect x="96.248" y="81.6794" width="238" height="286" rx="14" transform="rotate(-4.45677 96.248 81.6794)" fill="#CDDAE3"/>
+<rect x="103" y="79" width="238" height="286" rx="14" fill="#F1F5F5"/>
+<circle cx="281" cy="135" r="37" fill="#FF1654"/>
+<line x1="135.5" y1="204.5" x2="315.5" y2="204.5" stroke="#91AEC1" stroke-width="5" stroke-linecap="round"/>
+<line x1="135.5" y1="324.5" x2="315.5" y2="324.5" stroke="#91AEC1" stroke-width="5" stroke-linecap="round"/>
+<line x1="135.5" y1="294.5" x2="315.5" y2="294.5" stroke="#91AEC1" stroke-width="5" stroke-linecap="round"/>
+<line x1="135.5" y1="234.5" x2="175.5" y2="234.5" stroke="#91AEC1" stroke-width="5" stroke-linecap="round"/>
+<line x1="135.5" y1="264.5" x2="241.5" y2="264.5" stroke="#91AEC1" stroke-width="5" stroke-linecap="round"/>
+<line x1="185.5" y1="234.5" x2="315.5" y2="234.5" stroke="#91AEC1" stroke-width="5" stroke-linecap="round"/>
+<line x1="252.5" y1="264.5" x2="315.5" y2="264.5" stroke="#91AEC1" stroke-width="5" stroke-linecap="round"/>
+<path d="M298.5 118.5L263 154" stroke="#F1F5F5" stroke-width="5" stroke-linecap="round"/>
+<path d="M263 118.5L298.5 154" stroke="#F1F5F5" stroke-width="5" stroke-linecap="round"/>
+<defs>
+<linearGradient id="paint0_linear" x1="70.5" y1="51.5" x2="382.5" y2="441" gradientUnits="userSpaceOnUse">
+<stop offset="0.161347" stop-color="#FF1654"/>
+<stop offset="1" stop-color="#A53150"/>
+</linearGradient>
+</defs>
+</svg>

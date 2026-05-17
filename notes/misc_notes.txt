@@ -1,0 +1,18 @@
+
+
+// Alternative to get angle in 2D space by translating the center3D to center2D in screen space, and centering the mouse around that, and using atan2
+// src/components/SliceView.vue:580 #pointerMoveMain / rotate
+        //
+log.info('movement2',movement2.x,movement2.y)
+log.info('mouse2', this.mousePosition2Cur.x, this.mousePosition2Cur.y)
+        //
+//https://stackoverflow.com/questions/21483999/using-atan2-to-find-angle-between-two-vectors
+let center2 = vec3ToScreenXYZ(center3, this.camera, this.elBox.offsetWidth, this.elBox.offsetHeight)
+console.log('projecting', center3, center2.x, center2.y, this.elBox.offsetWidth, this.elBox.offsetHeight)
+        //
+let cur = this.mousePosition2Cur.clone().sub(center2)
+let prev = this.mousePosition2Prev.clone().sub(center2)
+let angleCur = Math.atan2(cur.y, cur.x)
+let anglePrev = Math.atan2(prev.y, prev.x)
+let angle = anglePrev - angleCur
+console.log('angle', angle, anglePrev, angleCur)
