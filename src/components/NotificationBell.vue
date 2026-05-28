@@ -115,6 +115,14 @@ const TYPE_ICONS = {
   FEEDBACK_RECEIVED: 'mdi-comment-text-outline',
   ACCOUNT_CREATED: 'mdi-account-circle-outline',
   COHORT_ACCOUNT_OPENED: 'mdi-school-outline',
+  EXAM_UNLOCKED: 'mdi-lock-open-variant-outline',
+  EXAM_SANDBOX_ENABLED: 'mdi-flask-outline',
+  EXAM_SANDBOX_DISABLED: 'mdi-flask-off-outline',
+  FEEDBACK_REPLIED: 'mdi-reply-outline',
+  STUDENT_EXAM_COMPLETED: 'mdi-clipboard-check-outline',
+  NEW_FEATURE: 'mdi-star-outline',
+  KNOWN_BUG: 'mdi-bug-outline',
+  ACCOUNT_EXPIRING: 'mdi-clock-alert-outline',
 }
 
 const TYPE_COLORS = {
@@ -122,6 +130,14 @@ const TYPE_COLORS = {
   FEEDBACK_RECEIVED: '#3a9989',
   ACCOUNT_CREATED: '#be1898',
   COHORT_ACCOUNT_OPENED: '#f9ac34',
+  EXAM_UNLOCKED: '#5b8c5a',
+  EXAM_SANDBOX_ENABLED: '#247ba0',
+  EXAM_SANDBOX_DISABLED: '#b5651d',
+  FEEDBACK_REPLIED: '#3a9989',
+  STUDENT_EXAM_COMPLETED: '#247ba0',
+  NEW_FEATURE: '#f9ac34',
+  KNOWN_BUG: '#e0556e',
+  ACCOUNT_EXPIRING: '#f9ac34',
 }
 
 export default {
@@ -164,6 +180,10 @@ export default {
     async onClickNotification(notif) {
       if (!notif.isRead) {
         await this.markAsRead(notif.id)
+      }
+      this.open = false
+      if (notif.deepLink) {
+        this.$router.push(notif.deepLink).catch(() => {})
       }
     },
 
