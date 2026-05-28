@@ -102,6 +102,12 @@ const router = new Router({
       beforeEnter: requireLogin,
     },
     {
+      path: '/announcements',
+      name: 'announcements',
+      component: () => import(/* webpackChunkName: "Announcements" */ './views/Admin/Announcements.vue'),
+      beforeEnter: requireLoginAdmin,
+    },
+    {
       path: '/region-selection',
       name: 'region-selection',
       component: () => import(/* webpackChunkName: "RegionSelection" */ './views/RegionSelection.vue'),

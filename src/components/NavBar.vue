@@ -175,6 +175,9 @@
           </v-btn>
         </template>
         <v-list>
+          <v-list-item href="#" to="/announcements">
+            <v-list-item-title>{{ $t('global.announcements') }}</v-list-item-title>
+          </v-list-item>
           <v-list-item href="#" to="/student-manager">
             <v-list-item-title>{{ $t('global.manage_students') }}</v-list-item-title>
           </v-list-item>

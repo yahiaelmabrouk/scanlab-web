@@ -207,6 +207,48 @@ const EVENTS = [
     icon: 'mdi-school-outline',
     color: '#f9ac34',
   },
+  {
+    type: 'EXAM_UNLOCKED',
+    label: 'Exam Unlocked',
+    description: 'When your instructor unlocks an exam',
+    icon: 'mdi-lock-open-variant-outline',
+    color: '#5b8c5a',
+  },
+  {
+    type: 'EXAM_SANDBOX_ENABLED',
+    label: 'Sandbox Enabled',
+    description: 'When an exam is put into sandbox mode',
+    icon: 'mdi-flask-outline',
+    color: '#247ba0',
+  },
+  {
+    type: 'EXAM_SANDBOX_DISABLED',
+    label: 'Sandbox Disabled',
+    description: 'When an exam is removed from sandbox mode',
+    icon: 'mdi-flask-off-outline',
+    color: '#b5651d',
+  },
+  {
+    type: 'NEW_FEATURE',
+    label: 'New Features',
+    description: 'When a new feature is released',
+    icon: 'mdi-star-outline',
+    color: '#f9ac34',
+  },
+  {
+    type: 'KNOWN_BUG',
+    label: 'Known Issues',
+    description: 'When a known issue is reported',
+    icon: 'mdi-bug-outline',
+    color: '#e0556e',
+  },
+  {
+    type: 'ACCOUNT_EXPIRING',
+    label: 'Account Expiring',
+    description: 'When your account is about to expire',
+    icon: 'mdi-clock-alert-outline',
+    color: '#f9ac34',
+  },
 ]
 
 const CHANNELS = [

@@ -147,6 +147,41 @@ const notificationService = {
       commit('setPhoneStatus', { phoneNumber, countryCode })
     },
 
+    async announceNewFeature({ rootState }, { featureName }) {
+      const token = rootState.authentication.accessToken
+      if (!token) return
+      const res = await apiPost('announcements/new-feature', { featureName }, token)
+      if (!res.data.success) {
+        throw new Error(res.data.error || 'Failed to send announcement')
+      }
+    },
+
+    async announceKnownBug({ rootState }, { bugDescription }) {
+      const token = rootState.authentication.accessToken
+      if (!token) return
+      const res = await apiPost('announcements/known-bug', { bugDescription }, token)
+      if (!res.data.success) {
+        throw new Error(res.data.error || 'Failed to send announcement')
+      }
+    },
+
+    async fetchAccountExpirySetting({ rootState }) {
+      const token = rootState.authentication.accessToken
+      if (!token) return null
+      const res = await apiGet('announcements/account-expiry-setting', token)
+      return res.data.days
+    },
+
+    async saveAccountExpirySetting({ rootState }, { days }) {
+      const token = rootState.authentication.accessToken
+      if (!token) return
+      const res = await apiPut('announcements/account-expiry-setting', {}, { days }, token)
+      if (!res.data.success) {
+        throw new Error(res.data.error || 'Failed to save setting')
+      }
+      return res.data.days
+    },
+
     startPolling({ dispatch, state, commit }) {
       if (state._pollIntervalId) return
       dispatch('fetchUnreadCount')
