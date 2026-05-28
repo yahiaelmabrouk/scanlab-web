@@ -40,7 +40,7 @@ const config = {
       ? 'https://scanlab-vet-api.herokuapp.com/v1/'
       : isCTLab
       ? 'https://scanlab-ct-api-48468ae0fa1a.herokuapp.com/v1/'
-      : 'https://api.scanlabmr.com/v1/'
+      : 'http://24.199.106.243:6200/v1/'
     : '/api/v1/',
   analysisApiRoot: 'https://r-analysis-api.scanlabmr.com/v1/',
   analysisPublicRoot: 'https://r-analysis-api.scanlabmr.com/public',
